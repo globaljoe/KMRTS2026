@@ -1,0 +1,31 @@
+{
+  "conference": {
+    "name": "2026년도 한국수중·수상로봇기술연구회 춘계학술대회",
+    "shortName": "2026 KMRTS 춘계학술대회",
+    "date": "2026년 6월 25일(목) · 13:00–18:00",
+    "venue": "KAIST 본원 KI빌딩 2층 매트릭스홀",
+    "address": "대전광역시 유성구 대학로 291",
+    "host": "한국수중·수상로봇기술연구회"
+  },
+  "plenary": [
+    {"time":"13:05–13:55","label":"초청강연 1","title":"선박해양유체역학에 기반한 자율운항기술 고도화에 관한 연구","speaker":"남보우 교수","affiliation":"서울대학교","chair":"유선철 (POSTECH)","file":"03_plenary/초청강연1_남보우교수님.pdf"},
+    {"time":"13:55–14:45","label":"초청강연 2","title":"무인 수상선의 자율주행을 위한 멀티 레이더 센싱 기술","speaker":"김아영 교수","affiliation":"서울대학교","chair":"최현택 (KRISO)","file":"03_plenary/초청강연2_김아영교수님.pdf"}
+  ],
+  "papers": [
+    {"code":"A-P1","session":"A","title":"AUV 전방 및 측면 배치 FLS를 활용한 Pose Graph SLAM","authors":"심현민 · 하재민 · 조한길","affiliation":"경북대학교","file":"04_papers/A-P1_경북대_심현민.pdf","keywords":["AUV","SLAM","FLS"]},
+    {"code":"A-P2","session":"A","title":"PGSPN: 깊이 희소성에 강건한 수중 깊이 보완을 위한 물리 기반 공간 전파 네트워크","authors":"양건모 · 이주희 · 최지원 · 이정우 · 조영근","affiliation":"인하대학교","file":"04_papers/A-P2_인하대_양건모.pdf","keywords":["수중 깊이 보완","공간 전파 네트워크"]},
+    {"code":"A-P3","session":"A","title":"타선의 위치 불확실성을 고려한 BIT* 기반 자율운항선박 충돌 회피 프레임워크","authors":"김소진 · 박정홍","affiliation":"선박해양플랜트연구소(KRISO) · UST","file":"04_papers/A-P3_KRISO_김소진_.pdf","keywords":["자율운항선박","충돌 회피","BIT*"]},
+    {"code":"A-P4","session":"A","title":"수중 마커와 UKF-M을 이용한 수중로봇의 정밀 측위방법","authors":"유재욱 · 송영운 · 구본철 · 유동길 · 유선철","affiliation":"포항공과대학교","file":"04_papers/A-P4_포스텍_유재욱.pdf","keywords":["수중 측위","UKF-M","능동형 마커"]},
+    {"code":"A-P5","session":"A","title":"강화학습 기반 수중 단일 물체 View Planning 정책 학습","authors":"표승현 · 박대길","affiliation":"선박해양플랜트연구소(KRISO) · UST","file":"04_papers/A-P5_KRISO_표승현_.pdf","keywords":["강화학습","View Planning"]},
+    {"code":"A-P6","session":"A","title":"수상선 기반 수변 구조물 맵핑을 위한 카메라-라이다 타겟리스 캘리브레이션 기법","authors":"허수현 · 홍성훈","affiliation":"계명대학교","file":"04_papers/A-P6_계명대_허수현.pdf","keywords":["Camera-LiDAR","캘리브레이션"]},
+    {"code":"A-P7","session":"A","title":"AUV의 이미지 소나 틸트각도 제어를 통한 해저면의 수중맵핑 정밀도 개선","authors":"구본철 · 유재욱 · 김승민 · 함승원 · 김재선 · 유선철","affiliation":"포항공과대학교","file":"04_papers/A-P7_포스텍_구본철.pdf","keywords":["이미지 소나","AUV","수중맵핑"]},
+    {"code":"A-P8","session":"A","title":"확산 모델 기반 모방학습 알고리즘을 이용한 자동 접안 시스템에 관한 연구","authors":"민재홍 · 남보우","affiliation":"서울대학교","file":"04_papers/A-P8_서울대_민재홍_.pdf","keywords":["자동 접안","확산 모델","모방학습"]},
+    {"code":"B-P1","session":"B","title":"물리 정보 신경망을 이용한 무인 수상정 시스템 모델링","authors":"이태우","affiliation":"한국과학기술원(KAIST)","file":"04_papers/B-P1_KAIST_이태우_.pdf","keywords":["무인 수상정","물리 정보 신경망"]},
+    {"code":"B-P2","session":"B","title":"시간적 변화를 고려한 지자기장 지도 기반 수중 위치 추정 기법","authors":"박상원","affiliation":"한국과학기술원(KAIST)","file":"04_papers/B-P2_KAIST_박상원_.pdf","keywords":["지자기장 지도","수중 위치 추정"]},
+    {"code":"B-P3","session":"B","title":"자율 수중 운동체 인공 측선 센서 선정 기준으로서 상호 정보량의 유효성","authors":"변성훈 · 박진영 · 서지영 · 송진호 · 남보우","affiliation":"선박해양플랜트연구소(KRISO) · 서울대학교","file":"04_papers/B-P3_KRISO_변성훈.pdf","keywords":["인공 측선","상호 정보량","AUV"]},
+    {"code":"B-P4","session":"B","title":"2500미터급 동력형 수중자율이동체 개발","authors":"전한성 · 윤경환 · 조성진 · 정수남 · 정지수","affiliation":"대양전기공업(주)","file":"","submitted":false,"keywords":["수중자율이동체","2500미터급","AUV"]},
+    {"code":"B-P5","session":"B","title":"수중 장거리 무선 광통신을 위한 고감도 PMT 광통신 모뎀 개발","authors":"손현중 · 김태호 · 박효경 · 신성영 · 강진일","affiliation":"(주)볼시스","file":"04_papers/B-P5_볼시스_손현중.pdf","keywords":["수중 무선 광통신","PMT","광통신 모뎀"]},
+    {"code":"B-P6","session":"B","title":"USV의 파랑운동을 고려한 수중 무선광통신 정렬·추적 시스템의 모터 요구 성능 산정","authors":"김병조 · 이주홍 · 강진일","affiliation":"(주)볼시스","file":"04_papers/B-P6_볼시스_김병조.pdf","keywords":["UWOC","USV","PAT"]},
+    {"code":"B-P7","session":"B","title":"수중 데이터 회수를 위한 무지향성 수중 무선 광통신 모뎀 개발","authors":"신성영 · 손현중 · 박효경 · 김태호 · 강진일","affiliation":"(주)볼시스","file":"04_papers/B-P7_볼시스_신성영.pdf","keywords":["수중 무선 광통신","데이터 회수","무지향성 모뎀"]}
+  ]
+}

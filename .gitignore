@@ -1,0 +1,12 @@
+# Local source document (not used by the website)
+1_표지.docx
+
+# Advertisement source PDFs (the popup uses ad_1.jpg - ad_3.jpg)
+01_ad/*.pdf
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
