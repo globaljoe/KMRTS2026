@@ -73,7 +73,7 @@
       const search=document.getElementById('search');search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let n=0;document.getElementById('program').classList.toggle('hidden',q.length>0);document.querySelectorAll('.schedule-row').forEach(row=>{const show=row.dataset.search.includes(q);row.classList.toggle('hidden',!show);if(show)n++});document.getElementById('count').textContent=`${n}편의 논문`;document.getElementById('empty').classList.toggle('show',n===0)});
     }
     showAds();
-    fetch('papers.json').then(r=>{if(!r.ok)throw 0;return r.json()}).then(render).catch(()=>render(embedded));
+    fetch('papers.json?v=20260622-2',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(render).catch(()=>render(embedded));
   </script>
 </body>
 </html>
