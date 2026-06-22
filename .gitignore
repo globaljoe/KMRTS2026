@@ -4,6 +4,9 @@
 # Advertisement source PDFs (the popup uses ad_1.jpg - ad_3.jpg)
 01_ad/*.pdf
 
+# Local backup of the original program PDF
+02_program/program_original.pdf
+
 # OS/editor files
 .DS_Store
 Thumbs.db
