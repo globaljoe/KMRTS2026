@@ -57,13 +57,19 @@
   }
 
   const dialog=$('ad-modal');
-  const storageKey='kmrts-autumn-2026-ads-viewed';
+  const storageKey='kmrts-autumn-2026-all-ads-viewed-v2';
+  const viewedAds=new Set();
+  let adsCompleted=false;
+  try {adsCompleted=sessionStorage.getItem(storageKey)==='1';} catch {}
   let adIndex=0;
   let previousFocus=null;
+  const allAdsViewed=()=>adsCompleted || data.ads.every(ad=>viewedAds.has(ad.image));
   function showAd(index) {
     if (!data.ads[index]) return;
+    const nextHadFocus=document.activeElement===$('ad-next');
     adIndex=index;
     const ad=data.ads[index];
+    viewedAds.add(ad.image);
     $('ad-image').src=ad.image;
     $('ad-image').alt=`${ad.name} 후원 광고`;
     $('ad-open').href=ad.image;
@@ -71,31 +77,37 @@
     $('ad-count').textContent=`${index+1} / ${data.ads.length}`;
     $('ad-prev').disabled=index===0;
     $('ad-next').disabled=index===data.ads.length-1;
+    $('ad-close').disabled=!allAdsViewed();
+    $('ad-help').textContent=allAdsViewed() ? '모든 후원사 광고를 확인했습니다.' : '광고 3개를 모두 확인하면 닫기 버튼이 활성화됩니다.';
     if (!dialog.open) {
       previousFocus=document.activeElement;
       dialog.showModal();
       document.body.style.overflow='hidden';
     }
+    if (nextHadFocus && $('ad-next').disabled && allAdsViewed()) $('ad-close').focus();
   }
-  $('ad-close').addEventListener('click',()=>dialog.close());
+  $('ad-close').addEventListener('click',()=>{if(allAdsViewed()) dialog.close();});
   $('ad-prev').addEventListener('click',()=>showAd(adIndex-1));
   $('ad-next').addEventListener('click',()=>showAd(adIndex+1));
+  dialog.addEventListener('cancel',event=>{if(!allAdsViewed()) event.preventDefault();});
   dialog.addEventListener('close',()=>{
     document.body.style.overflow='';
-    try {sessionStorage.setItem(storageKey,'1');} catch {}
+    if (allAdsViewed()) {
+      adsCompleted=true;
+      try {sessionStorage.setItem(storageKey,'1');} catch {}
+    }
     if (previousFocus instanceof HTMLElement) previousFocus.focus();
   });
   dialog.addEventListener('click',event=>{
-    if (event.target!==dialog) return;
+    if (event.target!==dialog || !allAdsViewed()) return;
     const r=dialog.getBoundingClientRect();
     if(event.clientX<r.left || event.clientX>r.right || event.clientY<r.top || event.clientY>r.bottom) dialog.close();
   });
   dialog.addEventListener('keydown',event=>{
+    if(event.key==='Escape' && !allAdsViewed()) {event.preventDefault();event.stopPropagation();return;}
     if(event.key==='ArrowRight') {event.preventDefault();showAd(adIndex+1);}
     if(event.key==='ArrowLeft') {event.preventDefault();showAd(adIndex-1);}
   });
   document.querySelectorAll('[data-ad-index]').forEach(button=>button.addEventListener('click',()=>showAd(Number(button.dataset.adIndex))));
-  let seen=false;
-  try {seen=sessionStorage.getItem(storageKey)==='1';} catch {}
-  if(!seen) showAd(0);
+  if(!adsCompleted) showAd(0);
 })();
