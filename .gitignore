@@ -13,3 +13,9 @@ Thumbs.db
 desktop.ini
 *.tmp
 *.log
+
+# Local autumn conference originals, production workspace, and print outputs
+2026추계/
+autumn-2026/
+output/
+tmp/

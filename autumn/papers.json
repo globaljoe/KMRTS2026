@@ -1,0 +1,327 @@
+{
+  "conference": {
+    "title": "2026 한국해양로봇기술연구회 추계학술대회",
+    "host": "한국해양로봇기술연구회",
+    "date": "2026년 11월 13일(금)",
+    "time": "13:00–18:00",
+    "venue": "부산항국제전시컨벤션센터(BPEX) 회의실 3·4",
+    "address": "부산 동구 충장대로 206 부산항국제여객터미널 5층"
+  },
+  "plenary": [
+    {
+      "label": "초청강연 1",
+      "title": "국제협력을 통한 무인함정 개발 현황 및 계획",
+      "speaker": "김형택 소장",
+      "affiliation": "HD한국조선해양 함정연구소",
+      "chair": "유선철 (POSTECH)",
+      "time": "13:05–13:55",
+      "file": "03_plenary/plenary_1.pdf"
+    },
+    {
+      "label": "초청강연 2",
+      "title": "바다에서 원자로까지, 그리고 다시 바다로",
+      "speaker": "주성문 박사",
+      "affiliation": "한국원자력연구원 (KAERI)",
+      "chair": "김진환 (KAIST)",
+      "time": "13:55–14:45",
+      "file": "03_plenary/plenary_2.pdf"
+    }
+  ],
+  "papers": [
+    {
+      "code": "A-P1",
+      "session": "A",
+      "title": "해상 환경에서의 다중 센서 데이터 취득을 위한 ROS2 기반 통합 시스템 개발",
+      "authors": "이동제 · 장혜수 · 김한근 · 구정모",
+      "affiliation": "씨드로닉스(주)",
+      "file": "04_papers/A-P1.pdf",
+      "keywords": [
+        "ROS2",
+        "다중 센서",
+        "데이터 취득",
+        "Development of a ROS2-Based Integrated System for Multi-Sensor Data Acquisition in Maritime Environments"
+      ]
+    },
+    {
+      "code": "A-P2",
+      "session": "A",
+      "title": "자율운항선박 디지털 트윈 환경 구축을 위한 DINOv3 이미지 특징 기반 카메라-라이다 3D 공간정보 정합 기초 연구",
+      "authors": "조민기 · 강민주 · 주기범 · 최진우 · 김동함 · 김동언 · 박정홍",
+      "affiliation": "선박해양플랜트연구소 (KRISO) / 과학기술연합대학원대학교 (UST)",
+      "file": "04_papers/A-P2.pdf",
+      "keywords": [
+        "DINOv3",
+        "카메라",
+        "라이다",
+        "디지털 트윈",
+        "Preliminary Study on Camera-LiDAR 3D Spatial Data Registration Using DINOv3 Image Features for Autonomous Ship Digital Twins"
+      ]
+    },
+    {
+      "code": "A-P3",
+      "session": "A",
+      "title": "수중 로봇 연구를 위한 GPU 가속 소나 시뮬레이터 및 자동 데이터셋 생성",
+      "authors": "권희규 · 심현민 · 하재민 · 조한길",
+      "affiliation": "경북대학교",
+      "file": "04_papers/A-P3.pdf",
+      "keywords": [
+        "소나 시뮬레이션",
+        "GPU",
+        "레스터화",
+        "음향 레이트레이싱",
+        "렌더링",
+        "GPU-Accelerated Sonar Simulator and Automatic Dataset Generation for Underwater Robot Research"
+      ]
+    },
+    {
+      "code": "A-P4",
+      "session": "A",
+      "title": "가상 데이터 학습 기반 수중 로봇 위치 추정",
+      "authors": "하재민 · 조한길",
+      "affiliation": "경북대학교 수중 및 필드로봇 연구실",
+      "file": "04_papers/A-P4.pdf",
+      "keywords": [
+        "가상 소나이미지",
+        "AUV",
+        "위치추정",
+        "고도화",
+        "Underwater Robot Localization Based on Learning from Synthetic Data"
+      ]
+    },
+    {
+      "code": "A-P5",
+      "session": "A",
+      "title": "해저면 근접 운용을 위한 제한된 화각의 3차원 멀티빔 음향측심기 기반 오도메트리 추정 기법",
+      "authors": "양동원 · 홍성훈 · 윤석민",
+      "affiliation": "계명대학교 / 한화시스템",
+      "file": "04_papers/A-P5.pdf",
+      "keywords": [
+        "멀티빔",
+        "오도메트리",
+        "해저면",
+        "Odometry Estimation Using a Limited-FOV 3D Multibeam Sonar for Near-Bottom Operations"
+      ]
+    },
+    {
+      "code": "A-P6",
+      "session": "A",
+      "title": "3D 소나의 3차원 특징벡터 기반 수중 다이버 탐지 알고리즘",
+      "authors": "이지원 · 박유진 · 신재정",
+      "affiliation": "서울대학교 조선해양공학과 능동인식 및 로봇지능 연구실",
+      "file": "04_papers/A-P6.pdf",
+      "keywords": [
+        "3D 소나",
+        "다이버 탐지",
+        "A 3D Feature Vector-based Underwater Diver Detection Algorithm using 3D SONAR"
+      ]
+    },
+    {
+      "code": "A-P7",
+      "session": "A",
+      "title": "RL-Based Gain Optimization of Time-Delay Control for AUVs with a Pan-Tilt Sensor Pointing Mechanism",
+      "authors": "김동섭 · 김승민 · 유선철",
+      "affiliation": "포항공과대학교 (POSTECH)",
+      "file": "04_papers/A-P7.pdf",
+      "keywords": [
+        "강화학습",
+        "TDC",
+        "RL",
+        "AUV"
+      ]
+    },
+    {
+      "code": "A-P8",
+      "session": "A",
+      "title": "Tilt-Aware FFT-ICP Scan Registration for Pose-Graph SLAM with a Downward-Tilted Forward-Looking Sonar",
+      "authors": "김승민 · 박성민 · 김민종 · 유선철",
+      "affiliation": "포항공과대학교 (POSTECH)",
+      "file": "04_papers/A-P8.pdf",
+      "keywords": [
+        "FFT",
+        "ICP",
+        "SLAM",
+        "소나"
+      ]
+    },
+    {
+      "code": "B-P1",
+      "session": "B",
+      "title": "대양전기공업(주) 수중로봇 솔루션",
+      "authors": "정수남",
+      "affiliation": "대양전기공업(주)",
+      "file": "04_papers/B-P1.pdf",
+      "keywords": [
+        "수중로봇",
+        "대양전기"
+      ]
+    },
+    {
+      "code": "B-P2",
+      "session": "B",
+      "title": "AUV 도킹 유도를 위한 딥러닝 기반 레이저 광원-끝점 검출",
+      "authors": "유수빈 · 길상민 · 권승곤 · 손현중 · 강진일",
+      "affiliation": "(주)볼시스 기업부설연구소",
+      "file": "04_papers/B-P2.pdf",
+      "keywords": [
+        "AUV",
+        "도킹",
+        "레이저",
+        "딥러닝",
+        "Deep Learning-Based Laser Source-Endpoint Detection for AUV Docking Guidance"
+      ]
+    },
+    {
+      "code": "B-P3",
+      "session": "B",
+      "title": "무인수상선 해상시험을 위한 무인기 자율 추종 및 공중 영상 관제 기술",
+      "authors": "김성민 · 이영준 · 김상수 · 이현우 · 강호준 · 한종부 · 김기훈",
+      "affiliation": "충남대학교 / 선박해양플랜트연구소 / 과학기술연합대학원대학교",
+      "file": "04_papers/B-P3.pdf",
+      "keywords": [
+        "USV",
+        "UAV",
+        "무인기",
+        "관제 시스템",
+        "Development of a UAV-Based Autonomous Tracking and Aerial Monitoring System for USV Sea Trials"
+      ]
+    },
+    {
+      "code": "B-P4",
+      "session": "B",
+      "title": "임의 단일 물체의 자율 시각 커버리지를 위한 학습 기반 경로계획기",
+      "authors": "표승현 · 박대길",
+      "affiliation": "과학기술연합대학원대학교 / 선박해양플랜트연구소",
+      "file": "04_papers/B-P4.pdf",
+      "keywords": [
+        "강화학습",
+        "시각 커버리지",
+        "경로계획"
+      ]
+    },
+    {
+      "code": "B-P5",
+      "session": "B",
+      "title": "Investigation of Effective State Representation for Side-Scan Sonar SLAM Under Elevation Degeneracy",
+      "authors": "임진호 · 홍성훈",
+      "affiliation": "계명대학교 인식기반 지능로봇 연구실",
+      "file": "04_papers/B-P5.pdf",
+      "keywords": [
+        "Side-Scan Sonar",
+        "SLAM",
+        "Elevation"
+      ]
+    },
+    {
+      "code": "B-P6",
+      "session": "B",
+      "title": "BB2 세일 후류 압력장 기반 AUV 상대 위치 추정 모델 개발",
+      "authors": "손영주 · 남보우 · 변성훈",
+      "affiliation": "서울대학교 / 선박해양플랜트연구소",
+      "file": "04_papers/B-P6.pdf",
+      "keywords": [
+        "포텐셜 유동",
+        "CFD",
+        "BB2",
+        "AUV",
+        "상대 위치",
+        "Development of a Model for AUV’s Relative Position Estimation from the BB2 Sail-Wake Pressure Field"
+      ]
+    },
+    {
+      "code": "B-P7",
+      "session": "B",
+      "title": "외란 관측기 기반 모델 예측 제어를 이용한 무인수상정의 강인 궤적 추종",
+      "authors": "박기용 · 김진환",
+      "affiliation": "한국과학기술원 (KAIST)",
+      "file": "04_papers/B-P7.pdf",
+      "keywords": [
+        "DOB",
+        "MPC",
+        "USV",
+        "궤적 추종",
+        "DOB-MPC for Robust Trajectory Tracking of Autonomous Surface Vehicles"
+      ]
+    },
+    {
+      "code": "B-P8",
+      "session": "B",
+      "title": "피드백 기반 인식 정제를 통한 열악한 해상 환경에서의 강인한 카메라-레이다 융합",
+      "authors": "신영하 · 김진환",
+      "affiliation": "한국과학기술원 (KAIST)",
+      "file": "04_papers/B-P8.pdf",
+      "keywords": [
+        "PRFusion",
+        "카메라",
+        "레이다",
+        "센서 융합",
+        "PRFusion: Feedback-Driven Perception Refinement for Robust Maritime Camera-Radar Fusion"
+      ]
+    }
+  ],
+  "ads": [
+    {
+      "name": "대양전기공업(주)",
+      "image": "01_ad/ad_1.jpg"
+    },
+    {
+      "name": "오션테크(주)",
+      "image": "01_ad/ad_2.jpg"
+    },
+    {
+      "name": "비엠에스",
+      "image": "01_ad/ad_3.jpg"
+    }
+  ],
+  "events": [
+    [
+      "11:00–13:00",
+      "등록/접수",
+      "현장 등록"
+    ],
+    [
+      "13:00–13:05",
+      "개회사",
+      "김진환 회장"
+    ],
+    [
+      "14:45–15:05",
+      "기념촬영 및 휴식",
+      "학술세션 A 준비"
+    ],
+    [
+      "15:05–15:45",
+      "학술세션 A · 포스터 티저",
+      "좌장 홍성훈 (계명대학교)"
+    ],
+    [
+      "15:45–16:20",
+      "학술세션 A · 포스터 발표",
+      ""
+    ],
+    [
+      "16:20–16:30",
+      "휴식",
+      "학술세션 B 준비"
+    ],
+    [
+      "16:30–17:10",
+      "학술세션 B · 포스터 티저",
+      "좌장 조성진 (한경국립대)"
+    ],
+    [
+      "17:10–17:45",
+      "학술세션 B · 포스터 발표",
+      ""
+    ],
+    [
+      "17:45–18:00",
+      "행사 종료 안내 및 만찬장 이동",
+      ""
+    ],
+    [
+      "18:00–",
+      "만찬",
+      "롯데캐슬 드메르 라메르(B동 2층)"
+    ]
+  ]
+}
